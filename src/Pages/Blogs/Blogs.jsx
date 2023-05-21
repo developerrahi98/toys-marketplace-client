@@ -3,8 +3,8 @@ import React from "react";
 const Blogs = () => {
   return (
     <div className="my-8">
-      <h1 className="text-center text-4xl font-bold">Welcome to my Blogs</h1>
-      <div className="w-1/2 border border-r-emerald-900 rounded mx-auto my-6 p-6">
+      <h1 className="text-center text-4xl font-bold">Welcome to My Blogs</h1>
+      <div className="w-1/2 border rounded mx-auto my-6 p-6">
         <div >
           <p className="text-3xl font-bold mb-3">
             What is an access token and refresh token? How do they work and
