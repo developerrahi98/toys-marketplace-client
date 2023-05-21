@@ -5,7 +5,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import router from "./Routes/Routes.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <div className="bg-white">
+  <div className="">
     <React.StrictMode>
       <RouterProvider router={router} />
     </React.StrictMode>
