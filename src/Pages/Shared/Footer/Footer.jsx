@@ -33,10 +33,19 @@ const Footer = () => {
             Providing toys since 1992
           </p>
         </div>
-        <div className=" footer-center mt-12 font-extrabold ">
-          <p>Copyright © 2023 - All right reserved by Supper Kiddo</p>
+        <div className=" footer-center mt-12 ">
+          <p className="text-2xl pb-10">
+            Lawrence Moreno 935-9940 Tortor. <br /> Street Santa Rosa MN 98804{" "}
+            <br />
+            (684) 579-1879
+          </p>
+          <div>
+          <p className="font-bold text-3xl mb-4">
+            Copyright © 2023 - All right reserved by Supper Kiddo
+          </p>
         </div>
-        <div className="md:place-self-center md:justify-self-end">
+        </div>
+        <div className="md:place-self-start md:justify-self-start">
           <div className="grid grid-flow-col gap-4">
             <a>
               <svg
