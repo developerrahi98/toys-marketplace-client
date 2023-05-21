@@ -7,7 +7,7 @@ import img4 from "../../../../assets/images/toy-red-car-with-pinecone-top.jpg";
 
 const Banner = () => {
   return (
-    <div className="carousel w-full">
+    <div className="carousel w-1/2 border  rounded-3xl h-1/6 my-6 mx-auto">
       <div id="slide1" className="carousel-item relative w-full">
         <img
           src={img1}
