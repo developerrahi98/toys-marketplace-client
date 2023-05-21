@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProviders";
+import image from '../../assets/images/istockphoto-1303860322-612x612.jpg'
 
 
 const SignUp = () => {
@@ -24,19 +25,14 @@ const SignUp = () => {
         <div className="hero min-h-screen bg-base-400">
         <div className="hero-content flex-col lg:flex-row-reverse">
           <div className="text-center lg:text-left">
-            <h1 className="text-5xl font-bold">Sign Up Now</h1>
-            <p className="py-6">
-              Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-              excepturi exercitationem quasi. In deleniti eaque aut repudiandae et
-              a id nisi.
-            </p>
+           <img src={image} alt="" />
           </div>
           <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
             <div className="card-body">
               <form onSubmit={handleSignUp}>
                 <div className="form-control">
                   <label className="label">
-                    <span className="label-text">Email</span>
+                    <span className="label-text">Name</span>
                   </label>
                   <input
                     type="text"
@@ -69,12 +65,12 @@ const SignUp = () => {
                 </div>
                 <div className="form-control">
                   <label className="label">
-                    <span className="label-text">Confirm Password</span>
+                    <span className="label-text">Photo URL</span>
                   </label>
                   <input
-                    type="password"
-                    name="confirmPassword"
-                    placeholder="Confirm Password"
+                    type="text"
+                    name="photoURL"
+                    placeholder="url"
                     className="input input-bordered"
                   />
                 </div>

@@ -4,7 +4,7 @@ import logo from "../../../assets/images/obc3_txti_210819.jpg";
 const Navbar = () => {
   return (
     <div>
-      <div className="navbar bg-purple-200">
+      <div className="navbar bg-violet-200 text-violet-900 p-4">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -35,7 +35,7 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-4 ml-4">
             <img className="w-24" src={logo} alt="" />
             <h2 className="text-4xl font-extrabold">Supper Kiddo</h2>
           </div>
@@ -43,7 +43,7 @@ const Navbar = () => {
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
             <li>
-              <a>Home</a>
+              <Link to='/'><a>Home</a></Link>
             </li>
             <li>
               <a>All Toys</a>
@@ -52,7 +52,7 @@ const Navbar = () => {
               <a>My Toys</a>
             </li>
             <li>
-              <a>Add a Toy</a>
+              <a>Add a Toys</a>
             </li>
             <li>
               <Link to="/blogs">
@@ -62,7 +62,7 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <button className="btn btn-outline btn-primary">
+          <button className="btn btn-outline btn-primary mr-4">
             <Link to='/login'>Login</Link>
           </button>
         </div>

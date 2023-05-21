@@ -3,7 +3,7 @@ import logo from "../../../assets/images/obc3_txti_210819.jpg";
 const Footer = () => {
   return (
     <div>
-      <footer className="bg-gray-900 text-white py-8">
+      <footer className="bg-violet-300 text-violet-900 py-8">
         <div className="container mx-auto flex flex-wrap justify-between">
           <div className="w-full md:w-1/4 pl-10">
             <img
