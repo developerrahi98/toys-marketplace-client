@@ -1,7 +1,16 @@
 import { Link } from "react-router-dom";
 import logo from "../../../assets/images/obc3_txti_210819.jpg";
+import { useContext } from "react";
+import { AuthContext } from "../../../Providers/AuthProviders";
+import { UserCircleIcon } from '@heroicons/react/24/solid'
 
 const Navbar = () => {
+  const { user, logOut } = useContext(AuthContext);
+  const handleLogOut = () => {
+    logOut()
+      .then((result) => {})
+      .catch((error) => console.log(error));
+  };
   return (
     <div>
       <div className="navbar bg-violet-200 text-violet-900 p-4">
@@ -43,28 +52,55 @@ const Navbar = () => {
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
             <li>
-              <Link to='/'><a>Home</a></Link>
+              <Link to="/">
+                <a>Home</a>
+              </Link>
             </li>
             <li>
               <a>All Toys</a>
-            </li>
-            <li>
-              <a>My Toys</a>
-            </li>
-            <li>
-              <a>Add a Toys</a>
             </li>
             <li>
               <Link to="/blogs">
                 <a>Blogs</a>
               </Link>
             </li>
+            <li>{user && <a>My Toys</a>}</li>
+            <li>
+              {user && (
+                <Link to="addToys">
+                  <a>Add a Toys</a>
+                </Link>
+              )}
+            </li>
           </ul>
         </div>
         <div className="navbar-end">
-          <button className="btn btn-outline btn-primary mr-4">
-            <Link to='/login'>Login</Link>
-          </button>
+          {user ? (
+            <div className="dropdown dropdown-end">
+              <label tabIndex={0}>
+                <div className="w-10 rounded-full">
+                  <UserCircleIcon className="h-12 w-12 text-blue-500" />
+                </div>
+              </label>
+              <ul
+                tabIndex={0}
+                className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-white rounded-box w-52"
+              >
+                <li>
+                  <button
+                    onClick={handleLogOut}
+                    className="btn btn-outline btn-primary"
+                  >
+                    LogOut
+                  </button>
+                </li>
+              </ul>
+            </div>
+          ) : (
+            <button className="btn btn-outline btn-primary mr-4">
+              <Link to="/login">Login</Link>
+            </button>
+          )}
         </div>
       </div>
     </div>

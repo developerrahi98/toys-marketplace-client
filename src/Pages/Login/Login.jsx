@@ -5,31 +5,6 @@ import image from "../../assets/images/depositphotos_1982796-stock-illustration-
 import { GoogleAuthProvider, getAuth } from "firebase/auth";
 
 const Login = () => {
-  const provider = new GoogleAuthProvider();
-  const auth = getAuth();
-  const handleGoogleLogin = () => {
-    signInWithPopup(auth, provider)
-      .then((result) => {
-        // This gives you a Google Access Token. You can use it to access the Google API.
-        const credential = GoogleAuthProvider.credentialFromResult(result);
-        const token = credential.accessToken;
-        // The signed-in user info.
-        const user = result.user;
-        // IdP data available using getAdditionalUserInfo(result)
-        // ...
-      })
-      .catch((error) => {
-        // Handle Errors here.
-        const errorCode = error.code;
-        const errorMessage = error.message;
-        // The email of the user's account used.
-        const email = error.customData.email;
-        // The AuthCredential type that was used.
-        const credential = GoogleAuthProvider.credentialFromError(error);
-        // ...
-      });
-  };
-
   const { signIn } = useContext(AuthContext);
   const handleLogin = (event) => {
     event.preventDefault();
@@ -39,8 +14,9 @@ const Login = () => {
     console.log(email, password);
     signIn(email, password)
       .then((result) => {
-        const user = result.user;
-        console.log(user);
+        const loggedUser = result.user;
+        console.log(loggedUser);
+        form.reset();
       })
       .catch((error) => console.log(error));
   };
@@ -69,7 +45,7 @@ const Login = () => {
                   <span className="label-text">Password</span>
                 </label>
                 <input
-                  type="text"
+                  type="password"
                   name="password"
                   placeholder="password"
                   className="input input-bordered"
@@ -88,7 +64,7 @@ const Login = () => {
                 />
               </div>
               <div className="form-control mt-6">
-                <button onClick={handleGoogleLogin} className="btn btn-primary">
+                <button onClick={()=>handleLogin()} className="btn btn-primary">
                   Continue with Google
                 </button>
               </div>

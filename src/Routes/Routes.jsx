@@ -6,6 +6,7 @@ import Error from "../Pages/Error/Error";
 import { Root } from "postcss";
 import Blogs from "../Pages/Blogs/Blogs";
 import Home from "../Pages/Home/Home/Home"
+import AddToys from "../Pages/AddToys/AddToys";
 
 const router = createBrowserRouter([
   {
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
         path: "blogs",
         element: <Blogs></Blogs>,
       },
+      {
+        path: "addToys",
+        element: <AddToys></AddToys>
+      }
     ],
   },
   {

@@ -32,10 +32,10 @@ const Gallery = () => {
                 <div className="border rounded-3xl bg-violet-100 p-7">
                     <img src={img6} alt="" />
                 </div>
-                <div className="border rounded-6 bg-violet-100 p-7">
+                <div className="border rounded-3xl bg-violet-100 p-7">
                     <img src={img7} alt="" />
                 </div>
-                <div className="border rounded-6 bg-violet-100 p-7">
+                <div className="border rounded-3xl bg-violet-100 p-7">
                     <img src={img8} alt="" />
                 </div>
                 <div className="border rounded-3xl bg-violet-100 p-7">

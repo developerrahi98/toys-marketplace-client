@@ -12,12 +12,14 @@ const SignUp = () => {
         const name = form.name.value;
         const email = form.email.value;
         const password = form.password.value;
-        console.log(name, email, password);
+        const image = form.photoURL.value;
+        console.log(name, email, password, image);
 
-        createUser(email, password)
+        createUser(email, password, image)
         .then(result => {
-            const user = result.user;
-            console.log(user);
+            const loggedUser = result.user;
+            console.log(loggedUser);
+            form.reset()
         })
         .catch(error => console.log(error))
     };
@@ -57,7 +59,7 @@ const SignUp = () => {
                     <span className="label-text">Password</span>
                   </label>
                   <input
-                    type="text"
+                    type="password"
                     name="password"
                     placeholder="password"
                     className="input input-bordered"
