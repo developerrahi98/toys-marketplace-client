@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import Swal from "sweetalert2";
 
 const MyToy = ({ toy, handleDelete }) => {
@@ -23,7 +24,7 @@ const MyToy = ({ toy, handleDelete }) => {
             <span className="font-extrabold">Ratings :</span> {toy.ratings}
           </p>
           <div className="card-actions justify-end">
-            <button className="btn btn-outline btn-primary">Update</button>
+            <Link to={`/updateToy/${toy._id}`}><button className="btn btn-outline btn-primary">Update</button></Link>
             <button className="btn btn-outline btn-primary" onClick={()=>handleDelete(toy._id)}>Delete</button>
           </div>
         </div>

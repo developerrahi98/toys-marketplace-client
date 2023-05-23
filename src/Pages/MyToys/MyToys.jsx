@@ -31,7 +31,7 @@ const MyToys = () => {
                         'Your file has been deleted.',
                         'success'
                       )
-                      const remaining = toys.filter(toy => toy._id === _id)
+                      const remaining = toys.filter(toy => toy._id !== _id)
                       setToy(remaining)
                 }
             })
