@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
+import Swal from "sweetalert2";
 
-const MyToy = ({ toy }) => {
+const MyToy = ({ toy, handleDelete }) => {
+    
   return (
     <div className="grid ">
       <div className="card w-96 bg-violet-50 shadow-xl text-violet-800">
@@ -22,7 +24,7 @@ const MyToy = ({ toy }) => {
           </p>
           <div className="card-actions justify-end">
             <button className="btn btn-outline btn-primary">Update</button>
-            <button className="btn btn-outline btn-primary">Delete</button>
+            <button className="btn btn-outline btn-primary" onClick={()=>handleDelete(toy._id)}>Delete</button>
           </div>
         </div>
       </div>
