@@ -1,13 +1,35 @@
 import { useForm } from "react-hook-form";
+import Swal from 'sweetalert2'
 
 const AddToys = () => {
   const {
     register,
     handleSubmit,
-    watch,
     formState: { errors },
   } = useForm();
-  const onSubmit = (data) => console.log(data);
+  const onSubmit = (data) => {
+    fetch('http://localhost:5000/addToy',{
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json'},
+        body: JSON.stringify(data)
+
+    })
+    .then(res=>res.json())
+    .then(data => {
+        console.log(data);
+        if(data.acknowledged == true){
+            Swal.fire({
+                title: 'Your information has been submitted successfully',
+                showClass: {
+                  popup: 'animate__animated animate__fadeInDown'
+                },
+                hideClass: {
+                  popup: 'animate__animated animate__fadeOutUp'
+                }
+              })
+        }
+    })
+  };
 
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
