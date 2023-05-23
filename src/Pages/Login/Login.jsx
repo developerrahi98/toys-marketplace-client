@@ -2,7 +2,8 @@ import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProviders";
 import image from "../../assets/images/depositphotos_1982796-stock-illustration-login-icon-button.jpg";
-import { GoogleAuthProvider, getAuth } from "firebase/auth";
+import { GoogleAuthProvider, getAuth, signInWithPopup } from "firebase/auth";
+import app from "../../FIrebase/firebase.config";
 
 const Login = () => {
   const { signIn } = useContext(AuthContext);
@@ -20,6 +21,15 @@ const Login = () => {
       })
       .catch((error) => console.log(error));
   };
+  const auth = getAuth(app);
+  const provider = new GoogleAuthProvider();
+  const handleGoogleLogin =()=>{
+    signInWithPopup(auth, provider)
+    .then((result) => {
+        const googleUser = result.user;
+    })
+    .catch((error) => console.log(error));
+  }
   return (
     <div className="hero min-h-screen bg-base-400">
       <div className="hero-content flex-col lg:flex-row-reverse">
@@ -64,7 +74,7 @@ const Login = () => {
                 />
               </div>
               <div className="form-control mt-6">
-                <button onClick={()=>handleLogin()} className="btn btn-primary">
+                <button onClick={handleGoogleLogin} className="btn btn-primary">
                   Continue with Google
                 </button>
               </div>
