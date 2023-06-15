@@ -3,7 +3,6 @@ import logo from "../../../assets/images/obc3_txti_210819.jpg";
 import { useContext } from "react";
 import { AuthContext } from "../../../Providers/AuthProviders";
 
-
 const Navbar = () => {
   const { user, logOut } = useContext(AuthContext);
   const handleLogOut = () => {
@@ -57,7 +56,9 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <a>All Toys</a>
+              <Link to='/alltoys'>
+                <a>All Toys</a>
+              </Link>
             </li>
             <li>
               <Link to="/blogs">
