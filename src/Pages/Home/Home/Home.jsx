@@ -1,8 +1,8 @@
 import Banner from "../HomeComponents/Banner/Banner";
-import Tabs from "../HomeComponents/Categories/Categories";
 import FeatureSection from "../../FeatueSection/FeatureSection";
 import GallerySection from "../HomeComponents/Gallery/GallerySection";
 import AboutUsSection from "../../AboutUs/AboutUsSection";
+import CategorySection from "../HomeComponents/Categories/CategorySection";
 
 
 
@@ -11,7 +11,7 @@ const Home = () => {
     <div>
       <Banner></Banner>
       <GallerySection></GallerySection>
-      <Tabs ></Tabs>
+      <CategorySection></CategorySection>
       <FeatureSection></FeatureSection>
       <AboutUsSection></AboutUsSection>
     </div>
