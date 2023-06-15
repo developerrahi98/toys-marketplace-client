@@ -2,13 +2,13 @@ import React from 'react';
 
 const FeatureSection = () => {
   return (
-    <section className="bg-gray-100 py-12 my-10">
+    <section className="bg-violet-100 py-12 my-10">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
-          <h2 className="text-3xl leading-9 font-semibold text-gray-900 sm:text-4xl sm:leading-10">
+          <h2 className="text-3xl leading-9 font-semibold text-violet-900 sm:text-4xl sm:leading-10">
             Discover Our Amazing Features
           </h2>
-          <p className="mt-3 max-w-2xl mx-auto text-xl leading-7 text-gray-500 sm:mt-4">
+          <p className="mt-3 max-w-2xl mx-auto text-xl leading-7 text-violet-900 sm:mt-4">
             Explore the fantastic features that make our toy marketplace the best in the industry.
           </p>
         </div>
@@ -64,7 +64,7 @@ const FeatureSection = () => {
                   User Reviews and Ratings
                 </h3>
                 <p className="mt-2 text-base leading-6 text-gray-500">
-                  Read real user reviews and ratings to help you make informed decisions and choose the perfect toys for your child.
+                Browse through a vast collection of toys for children of all ages, from educational toys to action figures and more.
                 </p>
               </div>
             </div>
