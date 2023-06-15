@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import logo from "../../../assets/images/obc3_txti_210819.jpg";
 import { useContext } from "react";
 import { AuthContext } from "../../../Providers/AuthProviders";
-import { UserCircleIcon } from '@heroicons/react/24/solid'
+
 
 const Navbar = () => {
   const { user, logOut } = useContext(AuthContext);
@@ -64,7 +64,13 @@ const Navbar = () => {
                 <a>Blogs</a>
               </Link>
             </li>
-            <li>{user && <Link to='/myToys'><a>My Toys</a></Link>}</li>
+            <li>
+              {user && (
+                <Link to="/myToys">
+                  <a>My Toys</a>
+                </Link>
+              )}
+            </li>
             <li>
               {user && (
                 <Link to="addToys">
@@ -76,26 +82,21 @@ const Navbar = () => {
         </div>
         <div className="navbar-end">
           {user ? (
-            <div className="dropdown dropdown-end">
-              <label tabIndex={0}>
-                <div className="w-10 rounded-full">
-                  <UserCircleIcon className="h-12 w-12 text-blue-500" />
-                </div>
-              </label>
-              <ul
-                tabIndex={0}
-                className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-white rounded-box w-52"
-              >
-                <li>
-                  <button
-                    onClick={handleLogOut}
-                    className="btn btn-outline btn-primary"
-                  >
-                    LogOut
-                  </button>
-                </li>
-              </ul>
-            </div>
+            <>
+              <div className="flex gap-2">
+                <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
+                  <div className="w-10 rounded-full ">
+                    <img src={user.photoURL} />
+                  </div>
+                </label>
+                <button
+                  onClick={handleLogOut}
+                  className="btn btn-outline btn-primary"
+                >
+                  <Link to="/login">Log Out</Link>
+                </button>
+              </div>
+            </>
           ) : (
             <button className="btn btn-outline btn-primary mr-4">
               <Link to="/login">Login</Link>
