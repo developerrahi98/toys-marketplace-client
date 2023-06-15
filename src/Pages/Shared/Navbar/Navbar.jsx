@@ -13,7 +13,7 @@ const Navbar = () => {
   };
   return (
     <div>
-      <div className="navbar bg-violet-200 text-violet-900 p-4">
+      <div className="navbar fixed bg-opacity-30 z-10 bg-violet-200 text-violet-900 p-4">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -34,7 +34,7 @@ const Navbar = () => {
             </label>
             <ul
               tabIndex={0}
-              className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
+              className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52 font-extrabold"
             >
               <li>
                 <a>Home</a>
@@ -50,7 +50,7 @@ const Navbar = () => {
           </div>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">
+          <ul className="menu menu-horizontal px-1 font-extrabold">
             <li>
               <Link to="/">
                 <a>Home</a>
@@ -91,14 +91,14 @@ const Navbar = () => {
                 </label>
                 <button
                   onClick={handleLogOut}
-                  className="btn btn-outline btn-primary"
+                  className="btn btn-primary font-bold"
                 >
-                  <Link to="/login">Log Out</Link>
+                  <Link to="/">Log Out</Link>
                 </button>
               </div>
             </>
           ) : (
-            <button className="btn btn-outline btn-primary mr-4">
+            <button className="btn  btn-primary mr-4 font-bold">
               <Link to="/login">Login</Link>
             </button>
           )}
