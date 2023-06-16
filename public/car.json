@@ -1,194 +1,245 @@
 [
   {
     "id": 1,
-    "'seller'": "'John Doe'",
+    "seller": "'John Doe'",
     "toyName": "Toy 1",
     "subCategory": "Racing",
-    " price": "$19.99",
-    "quantity": "10"
+    "price": "$19.99",
+    "quantity": "10",
+    "image": "https://img.freepik.com/free-vector/urban-racing-sticker-design_236756-441.jpg?w=996&t=st=1686828348~exp=1686828948~hmac=390b2a06306ef7253021547aeaa77e1896a7e499a6436ed17e43eb9a3315eee3",
+    "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit, eveniet!"
   },
   {
     "id": 2,
-    "'seller'": "'John Doe'",
+    "seller": "'John Doe'",
     "toyName": "Toy 2",
     "subCategory": "Racing",
-    " price": "$29.99",
-    "quantity": "10"
+    "price": "$29.99",
+    "quantity": "10",
+    "image":"https://img.freepik.com/free-photo/white-luxury-sport-sedan-car-standing-race-trace-front-side-view_114579-1161.jpg?w=996&t=st=1686828429~exp=1686829029~hmac=483d3f1f6d0f1c1a47edfdb3640cb4b27aa1b00d5a106284f53f399cb35bc23c",
+    "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit, eveniet!"
+    
   },
   {
     "id": 3,
-    "'seller'": "'John Doe'",
+    "seller": "'John Doe'",
     "toyName": "Toy 3",
     "subCategory": "Racing",
-    " price": "$19.99",
-    "quantity": "10"
+    "price": "$19.99",
+    "quantity": "10",
+    "image": "https://img.freepik.com/free-vector/urban-racing-sticker-design_236756-441.jpg?w=996&t=st=1686828348~exp=1686828948~hmac=390b2a06306ef7253021547aeaa77e1896a7e499a6436ed17e43eb9a3315eee3",
+    "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit, eveniet!"
   },
   {
     "id": 4,
-    "'seller'": "'John Doe'",
+    "seller": "'John Doe'",
     "toyName": "Toy 4",
     "subCategory": "Racing",
-    " price": "$29.99",
-    "quantity": "10"
+    "price": "$29.99",
+    "quantity": "10",
+    "image":"https://img.freepik.com/free-photo/white-luxury-sport-sedan-car-standing-race-trace-front-side-view_114579-1161.jpg?w=996&t=st=1686828429~exp=1686829029~hmac=483d3f1f6d0f1c1a47edfdb3640cb4b27aa1b00d5a106284f53f399cb35bc23c",
+    "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit, eveniet!"
   },
   {
     "id": 5,
-    "'seller'": "'John Doe'",
+    "seller": "'John Doe'",
     "toyName": "Toy 5",
     "subCategory": "Racing",
-    " price": "$39.99",
-    "quantity": "10"
+    "price": "$39.99",
+    "quantity": "10",
+    "image": "https://img.freepik.com/free-vector/urban-racing-sticker-design_236756-441.jpg?w=996&t=st=1686828348~exp=1686828948~hmac=390b2a06306ef7253021547aeaa77e1896a7e499a6436ed17e43eb9a3315eee3",
+    "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit, eveniet!"
   },
   {
     "id": 6,
-    "'seller'": "'John Doe'",
+    "seller": "'John Doe'",
     "toyName": "Toy 6",
     "subCategory": "Racing",
-    " price": "$49.99",
-    "quantity": "10"
+    "price": "$49.99",
+    "quantity": "10",
+    "image":"https://img.freepik.com/free-photo/white-luxury-sport-sedan-car-standing-race-trace-front-side-view_114579-1161.jpg?w=996&t=st=1686828429~exp=1686829029~hmac=483d3f1f6d0f1c1a47edfdb3640cb4b27aa1b00d5a106284f53f399cb35bc23c",
+    "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit, eveniet!"
   },
   {
     "id": 7,
-    "'seller'": "'John Doe'",
+    "seller": "'John Doe'",
     "toyName": "Toy 7",
     "subCategory": "Racing",
-    " price": "$59.99",
-    "quantity": "10"
+    "price": "$59.99",
+    "quantity": "10",
+    "image":"https://img.freepik.com/free-vector/japanese-old-drift-car_236756-439.jpg?w=996&t=st=1686828483~exp=1686829083~hmac=c0d18ebdf8c4e0de75a6e6f35a60bb3154fdd4e4bb2a8bbe884a0976f3b14ea8",
+    "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit, eveniet!"
   },
   {
     "id": 8,
-    "'seller'": "'John Doe'",
+    "seller": "'John Doe'",
     "toyName": "Toy 8",
     "subCategory": "Racing",
-    " price": "$69.99",
-    "quantity": "10"
+    "price": "$69.99",
+    "quantity": "10",
+    "image":"https://img.freepik.com/free-photo/white-luxury-sport-sedan-car-standing-race-trace-front-side-view_114579-1161.jpg?w=996&t=st=1686828429~exp=1686829029~hmac=483d3f1f6d0f1c1a47edfdb3640cb4b27aa1b00d5a106284f53f399cb35bc23c",
+    "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit, eveniet!"
   },
   {
     "id": 9,
-    "'seller'": "'John Doe'",
+    "seller": "'John Doe'",
     "toyName": "Toy 9",
     "subCategory": "jeep",
-    " price": "$69.99",
-    "quantity": "10"
+    "price": "$69.99",
+    "quantity": "10",
+    "image":"https://img.freepik.com/free-vector/japanese-old-drift-car_236756-439.jpg?w=996&t=st=1686828483~exp=1686829083~hmac=c0d18ebdf8c4e0de75a6e6f35a60bb3154fdd4e4bb2a8bbe884a0976f3b14ea8",
+    "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit, eveniet!"
   },
   {
     "id": 10,
-    "'seller'": "'John Doe'",
+    "seller": "'John Doe'",
     "toyName": "Toy 10",
     "subCategory": "jeep",
-    " price": "$69.99",
-    "quantity": "10"
+    "price": "$69.99",
+    "quantity": "10",
+    "image":"https://img.freepik.com/free-vector/off-road-concept-illustration_114360-6759.jpg?size=626&ext=jpg&uid=R101724172&ga=GA1.2.1699520301.1680333765&semt=ais",
+    "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit, eveniet!"
   },
   {
     "id": 11,
-    "'seller'": "'John Doe'",
+    "seller": "'John Doe'",
     "toyName": "Toy 11",
     "subCategory": "jeep",
-    " price": "$19.99",
-    "quantity": "10"
+    "price": "$19.99",
+    "quantity": "10",
+    "image":"https://img.freepik.com/free-vector/4x4-off-road-racing-flat-banner-template_575670-215.jpg?size=626&ext=jpg&uid=R101724172&ga=GA1.2.1699520301.1680333765&semt=ais"
+    ,
+    "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit, eveniet!"
   },
   {
     "id": 12,
-    "'seller'": "'John Doe'",
+    "seller": "'John Doe'",
     "toyName": "Toy 12",
     "subCategory": "jeep",
-    " price": "$29.99",
-    "quantity": "10"
+    "price": "$29.99",
+    "quantity": "10",
+    "image":"https://img.freepik.com/free-vector/off-road-concept-illustration_114360-6759.jpg?size=626&ext=jpg&uid=R101724172&ga=GA1.2.1699520301.1680333765&semt=ais"
+    ,
+    "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit, eveniet!"
   },
   {
     "id": 13,
-    "'seller'": "'John Doe'",
+    "seller": "'John Doe'",
     "toyName": "Toy 13",
     "subCategory": "jeep",
-    " price": "$39.99",
-    "quantity": "10"
+    "price": "$39.99",
+    "quantity": "10",
+    "image":"https://img.freepik.com/free-vector/flat-design-offroad-illustration_23-2150140857.jpg?size=626&ext=jpg&uid=R101724172&ga=GA1.2.1699520301.1680333765&semt=ais",
+    "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit, eveniet!"
   },
   {
     "id": 14,
-    "'seller'": "'John Doe'",
+    "seller": "'John Doe'",
     "toyName": "Toy 14",
     "subCategory": "jeep",
-    " price": "$49.99",
-    "quantity": "10"
+    "price": "$49.99",
+    "quantity": "10",
+    "image":"https://img.freepik.com/free-vector/off-road-concept-illustration_114360-6759.jpg?size=626&ext=jpg&uid=R101724172&ga=GA1.2.1699520301.1680333765&semt=ais",
+    "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit, eveniet!"
   },
   {
     "id": 15,
-    "'seller'": "'John Doe'",
+    "seller": "'John Doe'",
     "toyName": "Toy 15",
     "subCategory": "jeep",
-    " price": "$59.99",
-    "quantity": "10"
+    "price": "$59.99",
+    "quantity": "10",
+    "image":"https://img.freepik.com/free-vector/4x4-off-road-racing-flat-banner-template_575670-215.jpg?size=626&ext=jpg&uid=R101724172&ga=GA1.2.1699520301.1680333765&semt=ais",
+    "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit, eveniet!"
   },
   {
     "id": 16,
-    "'seller'": "'John Doe'",
+    "seller": "'John Doe'",
     "toyName": "Toy 16",
     "subCategory": "jeep",
-    " price": "$69.99",
-    "quantity": "10"
+    "price": "$69.99",
+    "quantity": "10",
+    "image":"https://img.freepik.com/free-vector/flat-design-offroad-illustration_23-2150140857.jpg?size=626&ext=jpg&uid=R101724172&ga=GA1.2.1699520301.1680333765&semt=ais",
+    "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit, eveniet!"
   },
   {
     "id": 17,
-    "'seller'": "'John Doe'",
+    "seller": "'John Doe'",
     "toyName": "Toy 17",
     "subCategory": "sedan",
-    " price": "$69.99",
-    "quantity": "10"
+    "price": "$69.99",
+    "quantity": "10",
+    "image":"https://img.freepik.com/free-vector/4x4-off-road-racing-flat-banner-template_575670-215.jpg?size=626&ext=jpg&uid=R101724172&ga=GA1.2.1699520301.1680333765&semt=ais",
+    "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit, eveniet!"
   },
   {
     "id": 18,
-    "'seller'": "'John Doe'",
+    "seller": "'John Doe'",
     "toyName": "Toy 18",
     "subCategory": "sedan",
-    " price": "$59.99",
-    "quantity": "10"
+    "price": "$59.99",
+    "quantity": "10",
+    "image":"https://img.freepik.com/free-vector/flat-design-offroad-illustration_23-2150140857.jpg?size=626&ext=jpg&uid=R101724172&ga=GA1.2.1699520301.1680333765&semt=ais",
+    "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit, eveniet!"
   },
   {
     "id": 19,
-    "'seller'": "'John Doe'",
+    "seller": "'John Doe'",
     "toyName": "Toy 19",
     "subCategory": "sedan",
-    " price": "$49.99",
-    "quantity": "10"
+    "price": "$49.99",
+    "quantity": "10",
+    "image":"https://img.freepik.com/free-vector/4x4-off-road-racing-flat-banner-template_575670-215.jpg?size=626&ext=jpg&uid=R101724172&ga=GA1.2.1699520301.1680333765&semt=ais",
+    "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit, eveniet!"
   },
   {
     "id": 20,
-    "'seller'": "'John Doe'",
+    "seller": "'John Doe'",
     "toyName": "Toy 20",
     "subCategory": "sedan",
-    " price": "$39.99",
-    "quantity": "10"
+    "price": "$39.99",
+    "quantity": "10",
+    "image":"https://img.freepik.com/free-vector/red-sedan-car-isolated-white-vector_53876-64366.jpg?size=626&ext=jpg&uid=R101724172&ga=GA1.2.1699520301.1680333765&semt=ais",
+    "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit, eveniet!"
   },
   {
     "id": 21,
-    "'seller'": "'John Doe'",
+    "seller": "'John Doe'",
     "toyName": "Toy 21",
     "subCategory": "sedan",
-    " price": "$29.99",
-    "quantity": "10"
+    "price": "$29.99",
+    "quantity": "10",
+    "image":"https://img.freepik.com/free-vector/blue-sedan-car-isolated-white-vector_53876-67352.jpg?size=626&ext=jpg&uid=R101724172&ga=GA1.2.1699520301.1680333765&semt=ais",
+    "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit, eveniet!"
   },
   {
     "id": 22,
-    "'seller'": "'John Doe'",
+    "seller": "'John Doe'",
     "toyName": "Toy 22",
     "subCategory": "sedan",
-    " price": "$39.99",
-    "quantity": "10"
+    "price": "$39.99",
+    "quantity": "10",
+    "image":"https://img.freepik.com/free-vector/red-sedan-car-isolated-white-vector_53876-64366.jpg?size=626&ext=jpg&uid=R101724172&ga=GA1.2.1699520301.1680333765&semt=ais",
+    "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit, eveniet!"
   },
   {
     "id": 23,
-    "'seller'": "'John Doe'",
+    "seller": "'John Doe'",
     "toyName": "Toy 23",
     "subCategory": "sedan",
-    " price": "$29.99",
-    "quantity": "10"
+    "price": "$29.99",
+    "quantity": "10",
+    "image":"https://img.freepik.com/free-vector/blue-sedan-car-isolated-white-vector_53876-67352.jpg?size=626&ext=jpg&uid=R101724172&ga=GA1.2.1699520301.1680333765&semt=ais",
+    "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit, eveniet!"
   },
   {
     "id": 24,
-    "'seller'": "'John Doe'",
+    "seller": "'John Doe'",
     "toyName": "Toy 24",
     "subCategory": "sedan",
-    " price": "$19.99",
-    "quantity": "10"
+    "price": "$19.99",
+    "quantity": "10",
+    "image":"https://img.freepik.com/free-vector/red-sedan-car-isolated-white-vector_53876-64366.jpg?size=626&ext=jpg&uid=R101724172&ga=GA1.2.1699520301.1680333765&semt=ais",
+    "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit, eveniet!"
   }
 ]

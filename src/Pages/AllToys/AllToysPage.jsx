@@ -1,31 +1,48 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from "react";
+import { AuthContext } from "../../Providers/AuthProviders";
+import Swal from "sweetalert2";
+import { useNavigate } from "react-router-dom";
+
+
 
 const AllToysPage = () => {
-  const [searchTerm, setSearchTerm] = useState('');
+  const { user } = useContext(AuthContext);
+  const navigate = useNavigate();
+  const [searchTerm, setSearchTerm] = useState("");
   const [toys, setToys] = useState([]);
-  useEffect(()=>{
-    fetch('car.json')
-    .then(res => res.json())
-    .then(data => setToys(data))
-  },[])
+  useEffect(() => {
+    fetch("http://localhost:5000/singleToy")
+      .then((res) => res.json())
+      .then((data) => setToys(data));
+  }, []);
+
+  console.log(toys);
 
   const handleSearchChange = (event) => {
     setSearchTerm(event.target.value);
   };
 
   const handleViewDetails = (toyName) => {
-    if (!isLoggedIn) {
-      // Redirect to login page
-      // Example: history.push("/login");
+    if (!user) {
+      Swal.fire({
+        title: "You have to be logged in first",
+        showClass: {
+          popup: "animate__animated animate__fadeInDown",
+        },
+        hideClass: {
+          popup: "animate__animated animate__fadeOutUp",
+        },
+      });
+      navigate("/login");
     } else {
-      // Handle view details for the selected toy
-      // Example: history.push(`/toys/${toyName}`);
+        navigate(`/toy/${toyName}`)
     }
   };
 
   const filteredToys = toys.filter((toy) =>
     toy.toyName.toLowerCase().includes(searchTerm.toLowerCase())
   );
+
 
   return (
     <div className="max-w-6xl mx-auto px-4 pt-20 sm:px-6 lg:px-8">
@@ -67,9 +84,7 @@ const AllToysPage = () => {
             <tbody className="bg-white divide-y divide-gray-200">
               {filteredToys.slice(0, 20).map((toy, index) => (
                 <tr key={index}>
-                  <td className="px-6 py-4 whitespace-no-wrap">
-                    {toy.seller}
-                  </td>
+                  <td className="px-6 py-4 whitespace-no-wrap">{toy.seller}</td>
                   <td className="px-6 py-4 whitespace-no-wrap">
                     {toy.toyName}
                   </td>
@@ -82,7 +97,7 @@ const AllToysPage = () => {
                   </td>
                   <td className="px-6 py-4 whitespace-no-wrap">
                     <button
-                      onClick={() => handleViewDetails(toy.toyName)}
+                      onClick={() => handleViewDetails(toy.id)}
                       className="text-indigo-600 btn btn-outline btn-primary hover:text-indigo-900"
                     >
                       View Details
