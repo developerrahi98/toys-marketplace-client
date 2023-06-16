@@ -7,7 +7,7 @@ import { Helmet } from "react-helmet-async";
 const MyToys = () => {
   const toys = useLoaderData();
   const [toy, setToy] = useState();
-  console.log(toys);
+
   const handleDelete = (_id) => {
     console.log(_id);
     Swal.fire({

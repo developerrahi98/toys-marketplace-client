@@ -2,9 +2,8 @@
 import { Link } from "react-router-dom";
 
 const MyToy = ({ toy, handleDelete }) => {
-    console.log(toy);
   return (
-    <div className="grid py-20 ">
+    <div className="py-20 ">
       <div className="card w-96 bg-violet-50 shadow-xl text-violet-800">
         <figure>
           <img src={toy.url} />

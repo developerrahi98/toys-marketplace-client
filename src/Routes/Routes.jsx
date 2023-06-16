@@ -51,7 +51,7 @@ const router = createBrowserRouter([
         element: <MyToys></MyToys>,
         loader: () =>
           fetch(
-            "https://toys-marketpalace-server-developerrahi98.vercel.app/addToy"
+            "http://localhost:5000/addToy"
           ),
       },
       {
@@ -59,7 +59,7 @@ const router = createBrowserRouter([
         element: <UpdateToys></UpdateToys>,
         loader: ({ params }) =>
           fetch(
-            `https://toys-marketpalace-server-developerrahi98.vercel.app/addToy/${params.id}`
+            `http://localhost:5000/addToy/${params.id}`
           ),
       },
     ],
