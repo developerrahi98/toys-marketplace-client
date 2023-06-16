@@ -23,7 +23,7 @@ const GallerySection = () => {
           </p>
         </div>
         <div className="mt-12 ">
-          <div className="grid grid-cols-3 gap-6 rounded-lg shadow-lg overflow-hidden">
+          <div className="grid md:grid-cols-3 gap-6 rounded-lg shadow-lg overflow-hidden">
            
             <div className="flex-1 bg-white p-6 flex flex-col justify-between">
               <div className="flex-1">

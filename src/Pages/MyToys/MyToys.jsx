@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import MyToy from "./MyToy";
 import Swal from "sweetalert2";
+import { Helmet } from "react-helmet-async";
 
 const MyToys = () => {
   const toys = useLoaderData();
@@ -20,7 +21,7 @@ const MyToys = () => {
     }).then((result) => {
       if (result.isConfirmed) {
         fetch(
-          `https://toys-marketpalace-server-developerrahi98.vercel.app/addToy/${_id}`,
+          `http://localhost:5000/addToy/${_id}`,
           {
             method: "DELETE",
           }
@@ -40,6 +41,9 @@ const MyToys = () => {
 
   return (
     <div className="grid grid-cols-3 gap-5 pl-14 py-14">
+      <Helmet>
+        <title>Supper Kiddo | My Toys </title>
+      </Helmet>
       {
         Array.from(toys).map(toy => <MyToy
             key={toys._id} toy={toy} handleDelete={handleDelete}

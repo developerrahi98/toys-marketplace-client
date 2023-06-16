@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../../Providers/AuthProviders";
 import Swal from "sweetalert2";
 import { useNavigate } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 
 
 
@@ -46,6 +47,9 @@ const AllToysPage = () => {
 
   return (
     <div className="max-w-6xl mx-auto px-4 pt-20 sm:px-6 lg:px-8">
+      <Helmet>
+        <title>Supper Kiddo | All Toys </title>
+      </Helmet>
       <div className="py-12">
         <h2 className="text-3xl leading-9 font-semibold text-violet-900 sm:text-4xl sm:leading-10">
           All Toys
@@ -57,7 +61,7 @@ const AllToysPage = () => {
               placeholder="Search by Toy Name"
               value={searchTerm}
               onChange={handleSearchChange}
-              className="px-4 py-2 border border-gray-300 rounded-md w-64 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+              className="px-4 py-2 border border-gray-300 rounded-md w-64 focus:outline-none focus:ring-2 focus:ring-indigo-500 bg-white"
             />
           </div>
           <table className="min-w-full divide-y divide-gray-200">

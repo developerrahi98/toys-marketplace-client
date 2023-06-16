@@ -12,9 +12,9 @@ const Navbar = () => {
   };
   return (
     <div>
-      <div className="navbar fixed bg-opacity-30 z-10 bg-violet-200 text-violet-900 p-4">
-        <div className="navbar-start">
-          <div className="dropdown">
+      <div className="navbar  bg-opacity-30 z-10 bg-violet-200 text-violet-900 p-4">
+        <div className="navbar-start ">
+          <div className="dropdown ">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -33,19 +33,42 @@ const Navbar = () => {
             </label>
             <ul
               tabIndex={0}
-              className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52 font-extrabold"
+              className="menu menu-compact dropdown-content mt-3 p-2 shadow rounded-box w-52 font-extrabold bg-white"
             >
               <li>
+              <Link to="/">
                 <a>Home</a>
-              </li>
-              <li>
+              </Link>
+            </li>
+            <li>
+              <Link to='/alltoys'>
                 <a>All Toys</a>
-              </li>
+              </Link>
+            </li>
+            <li>
+              <Link to="/blogs">
+                <a>Blogs</a>
+              </Link>
+            </li>
+            <li>
+              {user && (
+                <Link to="/myToys">
+                  <a>My Toys</a>
+                </Link>
+              )}
+            </li>
+            <li>
+              {user && (
+                <Link to="addToys">
+                  <a>Add a Toys</a>
+                </Link>
+              )}
+            </li>
             </ul>
           </div>
-          <div className="flex items-center gap-4 ml-4">
-            <img className="w-24" src={logo} alt="" />
-            <h2 className="text-4xl font-extrabold">Supper Kiddo</h2>
+          <div className="md:flex items-center gap-4 ml-4">
+            <img className="md:w-24" src={logo} alt="" />
+            <h2 className="md:text-4xl md:font-extrabold ">Supper Kiddo</h2>
           </div>
         </div>
         <div className="navbar-center hidden lg:flex">

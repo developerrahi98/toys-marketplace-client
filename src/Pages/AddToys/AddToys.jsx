@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { useForm } from "react-hook-form";
 import Swal from "sweetalert2";
 
@@ -5,11 +6,12 @@ const AddToys = () => {
   const {
     register,
     handleSubmit,
+    reset,
     formState: { errors },
   } = useForm();
   const onSubmit = (data) => {
     fetch(
-      "https://toys-marketpalace-server-developerrahi98.vercel.app/addToy",
+      "http://localhost:5000/addToy",
       {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -29,12 +31,16 @@ const AddToys = () => {
               popup: "animate__animated animate__fadeOutUp",
             },
           });
+          reset();
         }
       });
   };
 
   return (
     <>
+      <Helmet>
+        <title>Supper Kiddo | Add Toys </title>
+      </Helmet>
       <h2 className="text-3xl font-bold text-center pt-32 pb-5 text-violet-900">Add a Toy</h2>
       <form onSubmit={handleSubmit(onSubmit)}>
       <div className="hero min-h-screen">

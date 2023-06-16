@@ -112,7 +112,7 @@ const CategorySection = () => {
               </nav>
             </div>
           </div>
-          <div className="mt-8 flex justify-evenly">
+          <div className="mt-8 md:flex justify-evenly">
             {tabs[activeTab].subCategories.map((subCategory, index) => (
               <div key={index} className="mb-8 flex items-start bg-slate-50 p-6">
                 <img
