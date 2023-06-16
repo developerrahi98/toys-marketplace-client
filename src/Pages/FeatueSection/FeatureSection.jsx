@@ -4,7 +4,7 @@ const FeatureSection = () => {
   return (
     <section className="bg-violet-100 py-12 my-10">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 " >
-        <div className="text-center" data-aos="slide-right" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600">
+        <div className="text-center">
           <h2 className="text-3xl leading-9 font-semibold text-violet-900 sm:text-4xl sm:leading-10">
             Discover Our Amazing Features
           </h2>

@@ -17,13 +17,13 @@ const CategorySection = () => {
       category: 'Racing Cars',
       subCategories: [
         {
-          name: 'Race 1',
+          name: 'Toy 1',
           price: '$19.99',
           rating: 4.5,
           image: '/src/assets/images/Tabs/japanese_old_drift_car_4.jpg',
         },
         {
-          name: 'Race 2',
+          name: 'Toy 2',
           price: '$24.99',
           rating: 4.2,
           image: '/src/assets/images/Tabs/japanese_old_drift_car_3.jpg',
@@ -34,13 +34,13 @@ const CategorySection = () => {
       category: 'Jeep Cars',
       subCategories: [
         {
-          name: 'Jeep 1',
+          name: 'Toy 3',
           price: '$16.99',
           rating: 4.8,
           image: '/src/assets/images/Tabs/5706071.jpg',
         },
         {
-          name: 'Jeep 2',
+          name: 'Toy 4',
           price: '$21.99',
           rating: 4.4,
           image: '/src/assets/images/Tabs/8547448.jpg',
@@ -51,13 +51,13 @@ const CategorySection = () => {
       category: 'Sedan Cars',
       subCategories: [
         {
-          name: 'Sedan 1',
+          name: 'Toy 5',
           price: '$29.99',
           rating: 4.6,
           image: '/src/assets/images/Tabs/64366.jpg',
         },
         {
-          name: 'Sedan 2',
+          name: 'Toy 6',
           price: '$34.99',
           rating: 4.3,
           image: '/src/assets/images/Tabs/67352.jpg',
@@ -79,8 +79,7 @@ const CategorySection = () => {
       })
       navigate('/login')
     } else {
-      // Handle view details for the selected toy
-      // Example: history.push(`/toys/${subCategoryName}`);
+      navigate(`/alltoys`)
     }
   };
 

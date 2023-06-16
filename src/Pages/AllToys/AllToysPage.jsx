@@ -19,11 +19,12 @@ const AllToysPage = () => {
 
   console.log(toys);
 
+
   const handleSearchChange = (event) => {
     setSearchTerm(event.target.value);
   };
 
-  const handleViewDetails = (toyName) => {
+  const handleViewDetails = (id) => {
     if (!user) {
       Swal.fire({
         title: "You have to be logged in first",
@@ -36,7 +37,7 @@ const AllToysPage = () => {
       });
       navigate("/login");
     } else {
-        navigate(`/toy/${toyName}`)
+        navigate(`/toy/${id}`)
     }
   };
 
@@ -101,7 +102,7 @@ const AllToysPage = () => {
                   </td>
                   <td className="px-6 py-4 whitespace-no-wrap">
                     <button
-                      onClick={() => handleViewDetails(toy.id)}
+                      onClick={() => handleViewDetails(toy._id)}
                       className="text-indigo-600 btn btn-outline btn-primary hover:text-indigo-900"
                     >
                       View Details
